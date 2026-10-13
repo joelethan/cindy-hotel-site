@@ -1,1 +1,5 @@
 .vercel
+.DS_Store
+
+# Original full-size Jinja photos (site uses the optimised copies in img/site/)
+img/airbb/
