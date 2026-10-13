@@ -973,3 +973,14 @@ html.no-scroll { overflow: hidden; }
     margin: 28px 0 0;
     color: var(--muted);
 }
+
+/* Bright, sunny banner photos: lighter tint, text kept readable on the left */
+.page-hero--bright::before {
+    background:
+        linear-gradient(90deg, rgba(22,19,15,.72) 0%, rgba(22,19,15,.45) 40%, rgba(22,19,15,.05) 72%, rgba(22,19,15,0) 100%),
+        linear-gradient(0deg, rgba(22,19,15,.18) 0%, rgba(22,19,15,0) 35%);
+}
+.page-hero--bright h1, .page-hero--bright p { text-shadow: 0 1px 12px rgba(0,0,0,.35); }
+@media (max-width: 760px) {
+    .page-hero--bright::before { background: linear-gradient(180deg, rgba(22,19,15,.4) 0%, rgba(22,19,15,.68) 100%); }
+}
